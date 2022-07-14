@@ -5,8 +5,9 @@ class Cucce extends Product
     public $dimensioni;
     public $materiale;
 
-    function __construct($_dimensioni, $_materiale)
+    function __construct($_nome, $_prezzo, $_dimensioni, $_materiale)
     {
+        parent::__construct($_nome, $_prezzo);
         $this->setDimensioni($_dimensioni);
         $this->setMateriale($_materiale);
     }

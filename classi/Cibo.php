@@ -5,8 +5,9 @@ class Cibo extends Product
     public $scadenza;
     public $gusto;
 
-    function __construct($_scadenza, $_gusto)
+    function __construct($_nome, $_prezzo, $_scadenza, $_gusto)
     {
+        parent::__construct($_nome, $_prezzo);
         $this->setScadenza($_scadenza);
         $this->setgusto($_gusto);
     }

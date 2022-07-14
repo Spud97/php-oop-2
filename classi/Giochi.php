@@ -5,8 +5,9 @@ class Giochi extends Product
     public $colore;
     public $genere;
 
-    function __construct($_colore, $_genere)
+    function __construct($_nome, $_prezzo, $_colore, $_genere)
     {
+        parent::__construct($_nome, $_prezzo);
         $this->setColore($_colore);
         $this->setGenere($_genere);
     }
