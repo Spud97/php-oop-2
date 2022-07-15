@@ -3,6 +3,9 @@ require_once "classi/Product.php";
 require_once "classi/Cibo.php";
 require_once "classi/Giochi.php";
 require_once "classi/Cucce.php";
+require_once "classi/Customer.php";
+
+$customer = new Customer();
 
 $cibo1 = new Cibo ("Patè Cesar", "0.99€", 2025, "Manzo");
 $cibo2 = new Cibo ("Monge Simba", "2.49€", 2026, "Pollo");
