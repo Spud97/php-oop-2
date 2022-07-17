@@ -1,9 +1,9 @@
 <?php
-
+require_once __DIR__ . "/Product.php";
 class Cucce extends Product
 {
-    public $dimensioni;
-    public $materiale;
+    private $dimensioni;
+    private $materiale;
 
     function __construct($_nome, $_prezzo, $_dimensioni, $_materiale)
     {

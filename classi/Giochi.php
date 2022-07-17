@@ -1,9 +1,9 @@
 <?php
-
+require_once __DIR__ . "/Product.php";
 class Giochi extends Product
 {
-    public $colore;
-    public $genere;
+    private $colore;
+    private $genere;
 
     function __construct($_nome, $_prezzo, $_colore, $_genere)
     {

@@ -2,13 +2,15 @@
 
 class Product
 {
-    public $nome;
-    public $prezzo;
+  private string $nome;
+  private float $prezzo;
+  private string $id;
 
-    function __construct($_nome, $_prezzo)
+  function __construct($_nome, $_prezzo)
   {
     $this->setNome($_nome);
     $this->setPrezzo($_prezzo);
+    $this->id = uniqid();
   }
 
   public function getNome()
@@ -33,5 +35,10 @@ class Product
     $this->prezzo = $prezzo;
 
     return $this;
+  }
+
+  public function getId()
+  {
+    return $this->id;
   }
 }

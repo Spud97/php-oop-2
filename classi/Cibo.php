@@ -1,15 +1,16 @@
 <?php
+require_once __DIR__ . "/Product.php";
 
 class Cibo extends Product
 {
-    public $scadenza;
-    public $gusto;
+    private $scadenza;
+    private $gusto;
 
     function __construct($_nome, $_prezzo, $_scadenza, $_gusto)
     {
         parent::__construct($_nome, $_prezzo);
         $this->setScadenza($_scadenza);
-        $this->setgusto($_gusto);
+        $this->setGusto($_gusto);
     }
 
     public function getScadenza()
