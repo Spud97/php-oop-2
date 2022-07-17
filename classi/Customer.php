@@ -1,13 +1,17 @@
 <?php
 
+require_once __DIR__ . "/Cart.php";
 class Customer
 {
     private $registered = false;
     private $name;
     private $surname;
+    public Cart $cart;
 
     function __construct($_name = null, $_surname = null)
     {
+        $this->cart = new Cart();
+
         if (isset($_name) && isset($_surname)) {
             $this->register($_name, $_surname);
         }
